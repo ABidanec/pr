@@ -1,0 +1,11 @@
+section.section.section-gallery.clearfix
+    .l-center.section__line
+        +sectionHeader("LATEST PROJECTS", "section__header_gallery")
+        +sectionPreview("The best way to meet the product - look at the product.")
+        - var listImg = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg"];
+        - var listAlt = ["img1","img2","img3","img4","img5","img6"];
+        - var pathGallery = "assets/pic/gallery/";
+        ul.gallery-list.clearfix
+            - for(var i=0; i<listImg.length; i++)
+                li.gallery-list__item
+                    +LightBoxImg(pathGallery, listImg[i], listAlt[i],"gallery-list__img","gallery-list__link")

@@ -1,0 +1,6 @@
+- var menu = ["Home", "About", "Programs", "Projects", "Gallery", "Blog", "Contacts"];
+nav.footer-menu.clearfix
+    ul.footer-menu-list
+        - for(var i=0; i<menu.length; i++)
+            li.footer-menu-list__item
+                a.footer-menu-list__link(href="#")= menu[i]

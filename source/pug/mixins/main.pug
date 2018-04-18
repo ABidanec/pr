@@ -1,0 +1,18 @@
+mixin sectionHeader(text, classTag)
+    h2(class="section__header "+classTag)= text
+
+mixin sectionPreview(text)
+    .section__preview
+        p= text
+
+mixin btn(tagButton, classButtonStyle, textButton)
+    if tagButton == "a"
+        a(href="#" class="btn "+classButtonStyle)= textButton
+    if tagButton == "button"
+        button( class="btn "+classButtonStyle)= textButton
+
+mixin LightBoxImg(path, srcImg, altImg, classImg, classLInk)
+    - var pathImg = path+srcImg
+    a(data-lightbox="example-set" href=pathImg class=classLInk)
+        img(src=pathImg class=classImg alt=altImg)
+

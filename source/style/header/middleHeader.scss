@@ -1,0 +1,15 @@
+.middle-header__desc{
+  float: left;
+  width: 50%;
+  color: $white_color_link;
+
+  p{
+    font-size: 1.375em;
+  }
+
+  h1{
+    font-family:$font_oswald,sans-serif;
+    font-size: 5em;
+    font-weight: 400;
+  }
+}

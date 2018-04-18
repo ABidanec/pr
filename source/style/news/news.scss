@@ -1,0 +1,16 @@
+.news-list__item{
+  display: inline-block;
+  width: 30%;
+  margin:0 2% 5% 0;
+}
+  .news-list__img{
+    width:100%;
+    margin:0 0 1em 0;
+  }
+
+  .news-list__header{
+    font-family: $font_oswald, sans-serif;
+    font-size: 1.375em;
+    color: $black_color_font;
+    text-align: center;
+  }

@@ -1,0 +1,9 @@
+section.section.section-indicators.clearfix
+    .l-center
+        - var numbers = [754, 675, 54, 212];
+        - var desc = ['Happy Customers','Industry Specialists','Company Branches','Panels Produced a Day'];
+        ul.indicator-list
+            - for(var i=0; i<numbers.length; i++)
+                li.indicator-list__item
+                    p.indicator-list__numbers= numbers[i]
+                    p.indicator-list__desc= desc[i]

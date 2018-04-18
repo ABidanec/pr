@@ -1,0 +1,14 @@
+article.product-prev
+    .product-prev__left
+        img.product-prev__img(src="assets/pic/product/big-preview.jpg" alt="Product preview")
+    .product-prev__right
+        - var header = ["ECO-FRIENDLY","WIND GENERATORS","ENERGY SAVING"];
+        - var desc = ["Everything is made with environmentally safe materials with easy maintenance.","Aside from solar panels, we offer also alternative solutions like wind generations.","Any of our solutions will help you save thousands of dollars that you can spend in future."];
+        ul.product-prev-list
+            - for(var i=0; i<header.length; i++)
+                li.product-prev-list__item
+                    .product-prev-list__num
+                        span= (i+1)
+                    h3.product-prev-list__header= header[i]
+                    .product-prev-list__desc
+                        p= desc[i]

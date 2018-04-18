@@ -1,0 +1,17 @@
+- var listImg = ["img1.jpg", "img2.jpg"];
+- var listDesc = ["I saved a lot of energy since my panels was installed. High-quality, good price and pure satisfaction. I saved a lot of energy since my panels was installed. High-quality, good price and pure satisfaction. I saved a lot of energy since my panels was installed. High-quality, good price and pure satisfaction. I saved a lot of energy since my panels was installed. High-quality, good price and pure satisfaction.", "If you have a business, you can spend less on the energy consumption. It is the best alternative power provider."];
+- var listName = ["Austin Beck", "Bruce Aguilar"];
+- var listWork = [" Admin", " Author"];
+- var pathPost = "assets/pic/post/";
+ul.post-list
+    - for(var i=0; i<listImg.length; i++)
+        li.post-list__item
+            .post-list__left
+                img(class="post-list__img" src=pathPost+listImg[i] alt=listImg[i])
+            .post-list__right
+                .post-list__desc
+                    p= listDesc[i]
+                .post-list__author
+                    p - !{listName[i]},
+                        span= listWork[i]
+                    +btn("a", "btn__post", "Read more")

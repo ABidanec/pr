@@ -1,0 +1,22 @@
+.post-list__item{
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin: 0 2% 2% 0;
+}
+
+.post-list__left{
+  display: inline-block;
+  width:30%;
+  margin:0 3% 0 0;
+  vertical-align: top;
+}
+  .post-list__img{
+    width:100%;
+  }
+
+.post-list__right{
+  display: inline-block;
+  vertical-align: top;
+  width:66%;
+}

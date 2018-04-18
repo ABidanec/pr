@@ -1,0 +1,11 @@
+- var listImg = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg","img5.jpg","img6.jpg","img7.jpg"];
+- var listHeader = ["TRANSPORTATION", "INSTALLATION", "CONSULTING", "PANEL REPAIR","PRODUCTION","INDUSTRY","Location"];
+- var listDesc = ["Free shipping of any product to any point on the map.", "Note that we have special terms of cooperation with big industries.", "Free shipping of any product to any point on the map.","If you got a panel from a different company, we are able to fix it.","We have own factory, where we create the best solar panels.","We encourage other enterprises for further cooperation.","We encourage other enterprises for further cooperation."];
+ul.news-list
+    - for(var i=0; i<listImg.length; i++)
+        li.news-list__item
+            img(class="news-list__img" src=`assets/pic/news/${listImg[i]}` alt=`${listImg[i]}`)
+            h3.news-list__header= listHeader[i]
+            .news-list__desc
+                p= listDesc[i]
+            +btn("a", "btn__news", "Read more")

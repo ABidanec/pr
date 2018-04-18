@@ -1,0 +1,33 @@
+.section{
+  padding: 5em 0;
+}
+
+.section__line{
+  padding: 1em 0 0 0 ;
+
+  &:before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 3px solid $green_color_link;
+    width: 5%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.section__header{
+  color: $black_color_font;
+  font-family: $font_oswald, $base_family_font, sans-serif;
+  font-size: 3em;
+  margin: 0 0 0.2em 0;
+  text-align: center;
+}
+
+.section__preview{
+  p{
+    font-size: 1.125em;
+    text-align: center;
+  }
+}

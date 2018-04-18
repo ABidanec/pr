@@ -1,0 +1,12 @@
+- var listImg = ["img1.jpg","img2.jpg", "img3.jpg"];
+- var listHead = ["HOME PANELS","INDUSTRY POWER","CONSERVATION EQUIPMENT"];
+- var listDesc = ["We can install a super solar panel on your roof easy.","We offer industries to switch to alternative energy supply.","We develop tools that can significantly save your consumption level."];
+
+ul.top-list.clearfix
+    - for(var i=0; i<listImg.length; i++)
+        li.top-list__item
+            .l-top-list__img
+                img(class="top-list__img" src=`assets/pic/topList/${listImg[i]}`)
+            h3.top-list__header= listHead[i]
+            .top-list__desc
+                p= listDesc[i]

@@ -1,0 +1,15 @@
+.section-about{
+  background: #257DF9 url("../img/bgAbout.jpg") no-repeat top center;
+  background-size: cover;
+  color: $white_color_link;
+  text-align: center;
+  padding: 10em 0;
+}
+
+.about__header{
+  color: $white_color_link;
+}
+
+.btn__about{
+  @extend .btn__main;
+}

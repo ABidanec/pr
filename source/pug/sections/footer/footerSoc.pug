@@ -1,0 +1,7 @@
+article.footer-soc.clearfix
+    -var listSoc = ['vk', 'facebook', 'twitter', 'instagram', 'google-plus'];
+    ul.footer-soc-list
+        - for(var i=0; i<listSoc.length; i++)
+            li.footer-soc-list__item
+                a.footer-soc-list__link
+                    i(class="far fa-"+listSoc[i])
