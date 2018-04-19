@@ -37,7 +37,8 @@ var _moduleSlickMenu = (function(){
         action: function(){
             _topMenu.slicknav({
                 label: _labelTopMenu,
-                prependTo: _prependTo
+                prependTo: _prependTo,
+                label: 'Меню'
             });
         }
     }
