@@ -1,0 +1,33 @@
+.to-top{
+  position: fixed;
+  display: none;
+  bottom: 10%;
+  right: 2%;
+  height: 3.5em;
+  width: 3.5em;
+  font-family: $font_awesome;
+  background: $green_color_link;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  transition: $time;
+  &:hover{
+    background: #fff;
+    border: 2px solid $green_color_link;
+    color: $green_color_link;
+    transition: $time;
+  }
+}
+
+.fa-angle-up{
+
+  &:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2em;
+    transform: translate(-50%,-50%);
+  }
+}
