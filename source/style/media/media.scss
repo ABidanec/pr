@@ -1,0 +1,99 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .logo{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .header-menu__list{
+    width: 100%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 840px) {
+  .header-menu__link{
+    font-size: 0.9em;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 740px) {
+  .l-nav{
+    display: block;
+  }
+  .header-menu__list{
+    display: none;
+  }
+
+  .slicknav_nav .slicknav_row {
+    padding: 0.5em 0.4em;
+    margin: 2px 0; }
+  .slicknav_nav .slicknav_row:hover {
+    border-radius: 0;
+    background: #47CE87;
+    color: #fff; }
+
+  .slicknav_nav a {
+    padding: 0.5em 0.4em;
+    margin: 2px 0;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.1em;
+    background: $green_color_link;
+    border-radius: 0;
+    &:hover {
+      border-radius: 0;
+      background: #47CE87;
+      color: #FFF;
+    }
+  }
+  .header-submenu__list{
+    position: relative;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .to-top{
+    bottom: 0;
+    left: 0;
+    height: 3.5em;
+    width: 100%;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    &:hover{
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width : 600px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+@media only screen and (max-width : 240px) {
+
+}

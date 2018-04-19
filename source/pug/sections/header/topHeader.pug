@@ -1,14 +1,15 @@
 article.top-header.clearfix
     .l-center
         a(href="#").logo Пробоотборник
-        - var menu = ["Home", "About", "Programs", "Projects", "Gallery", "Blog", "Contacts", "Login"];
+        - var menu = ["Главная", "О сайте", "Категории", "Проекты", "Галерея", "Новости", "Контакты", "Логин"];
         - var submenu = ["item1", "Пробоотборник электромеханический для зерновых", "item3"];
         ul.header-menu__list
             - for(var i=0; i<menu.length; i++)
                 li.header-menu__item
                     a.header-menu__link(href="#")= menu[i]
-                    if menu[i] == "About"
+                    if menu[i] == "О сайте"
                         ul.header-submenu__list
                             - for(var j=0; j<submenu.length; j++)
                                 li.header-submenu__item
                                     a.header-submenu__link(href="#")= submenu[j]
+        .l-nav

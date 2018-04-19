@@ -1,5 +1,6 @@
 $(document).ready(function(){
     _scrollToTop.action();
+    _moduleSlickMenu.action();
 });
 
 var _scrollToTop = (function(){
@@ -22,6 +23,21 @@ var _scrollToTop = (function(){
                     {scrollTop:0},
                     delay
                 );
+            });
+        }
+    }
+})();
+
+var _moduleSlickMenu = (function(){
+    var _topMenu = $('.header-menu__list'),
+        _prependTo = '.l-nav',
+        _labelTopMenu = '';
+
+    return {
+        action: function(){
+            _topMenu.slicknav({
+                label: _labelTopMenu,
+                prependTo: _prependTo
             });
         }
     }

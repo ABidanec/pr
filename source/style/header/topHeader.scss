@@ -18,7 +18,7 @@
 .header-menu__list{
   display: block;
   float: right;
-  width:60%;
+  width: 70%;
   text-align: justify;
   margin: 0;
   padding: 0;
@@ -70,3 +70,12 @@
             border-top: 1px solid #fff;
             @include link_hover($white_color_link, $green_color_link);
           }
+// slick menu
+.l-nav{
+  display: none;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+// end slick menu
+
+
