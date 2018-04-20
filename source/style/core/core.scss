@@ -12,6 +12,7 @@ $time: 0.6s;
 
 $white_color_link: #fff;
 $green_color_link: #25ac65;
+$green_color_hover_link: #1E8950;
 
 $gallery_bg: #2D170F;
 
@@ -80,6 +81,16 @@ p{
 
 i.far{
   font-style: normal;
+}
+
+a{
+  color: $green_color_link;
+  transition: $time;
+  &:hover{
+    text-decoration: none;
+    color: $green_color_hover_link;
+    transition: $time;
+  }
 }
 
 .btn{

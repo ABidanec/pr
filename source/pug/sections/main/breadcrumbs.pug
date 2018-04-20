@@ -1,0 +1,7 @@
+- var list = ["Главная","Категории","Пробоотборники зерновые","Пробоотборник зерновой ПЭЗК"];
+section.breadcrumbs
+    .l-center
+        ul.breadcrumbs__list
+            - for(var i=0; i<list.length; i++)
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#")= list[i]

@@ -1,0 +1,15 @@
+include ../mixins/main
+doctype html
+html
+    head
+        include ../sections/head
+    body
+        .l-wrapper
+            include ../sections/header/headerInner
+            include ../sections/main/main
+        include ../sections/footer/footer
+        include ../sections/toTop/toTop
+        script(src="assets/js/jquery-3.2.1.min.js")
+        script(src="assets/js/lightbox2/dist/js/lightbox.js")
+        script(src="assets/js/slick-nav/jquery.slicknav.js")
+        script(src="assets/js/main.js")

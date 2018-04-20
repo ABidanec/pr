@@ -1,6 +1,7 @@
 $(document).ready(function(){
     _scrollToTop.action();
     _moduleSlickMenu.action();
+    _moduleBgImgHeaderInner.action();
 });
 
 var _scrollToTop = (function(){
@@ -40,6 +41,19 @@ var _moduleSlickMenu = (function(){
                 prependTo: _prependTo,
                 label: 'Меню'
             });
+        }
+    }
+})();
+
+var _moduleBgImgHeaderInner = (function () {
+    return{
+        action: function(){
+            var _block = $(".title-inner"),
+                pathImg = 'url('+_block.attr("data-img")+')';
+            _block.css({background: pathImg});
+            _block.css({backgroundPosition: "top center"});
+            _block.css({backgroundSize: "cover"});
+            console.log("path "+pathImg);
         }
     }
 })();

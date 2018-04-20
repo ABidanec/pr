@@ -1,0 +1,23 @@
+.breadcrumbs{
+  padding: 2em 0;
+}
+
+.breadcrumbs__list{
+  padding: 0;
+}
+
+.breadcrumbs__item{
+  display: inline-block;
+  &:before{
+    content: ">";
+    display: inline-block;
+    margin: 0 1em;
+    color: $green_color_link;
+  }
+  &:first-child{
+    &:before{
+      content: "";
+      margin: 0;
+    }
+  }
+}

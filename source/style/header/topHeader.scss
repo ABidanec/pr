@@ -15,6 +15,10 @@
   @include link_hover($white_color_link, $green_color_link);
 }
 
+.logo__inner{
+  @include link_hover($black_color_font, $green_color_link);
+}
+
 .header-menu__list{
   display: block;
   float: right;
@@ -50,6 +54,9 @@
       font-weight: 700;
       @include link_hover($white_color_link, $green_color_link);
     }
+      .header-menu__link_inner{
+        @include link_hover($black_color_font, $green_color_link);
+      }
       .header-submenu__list{
         padding: 0;
         position: absolute;

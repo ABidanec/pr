@@ -1,0 +1,22 @@
+.right-sidebar{
+  display: inline-block;
+  width: 27%;
+  margin: 0 0 0 2%;
+  vertical-align: top;
+}
+.post-sidebar__head{
+  text-align: center;
+  @extend .post__head;
+}
+.post-sidebar{
+  padding: 2em 0;
+}
+.post-sidebar__img{
+  width: 100%;
+  padding: 0 0 1em 0;
+}
+.post-sidebar__link{
+  font-family:$font_oswald, sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
