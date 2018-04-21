@@ -185,6 +185,12 @@
       transition: $time;
     }
   }
+
+  .contact-info__item,
+  .contact-form{
+    display: block;
+    width: 100%;
+  }
 }
 
 /* Extra Small Devices, Phones */

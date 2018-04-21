@@ -1,0 +1,9 @@
+section.section.section-contact-form.clearfix
+    .l-center.section__line
+        +sectionHeader("GET A PRICING QUOTE FOR A RESIDENTIAL OR BUSINESS SOLAR PANEL INSTALLATION", " ")
+        form.contact-form
+            input.contacts-form__input(placeholder="Ваше имя*" name="name" type="text")
+            input.contacts-form__input(placeholder="Ваш телефон*" name="phone" type="text")
+            input.contacts-form__input(placeholder="Ваш email*" name="email" type="text")
+            textarea.contacts-form__textarea(placeholder="Ваше сообщение*" name="message")
+            +btn("a", "contacts-form__submit", "Send Message")

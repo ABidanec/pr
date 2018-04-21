@@ -83,6 +83,8 @@ i.far{
   font-style: normal;
 }
 
+input {outline:none;}
+
 a{
   color: $green_color_link;
   transition: $time;
