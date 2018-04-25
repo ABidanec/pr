@@ -30,11 +30,11 @@ section.content
             p The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable. Below are the common mistakes related to money affairs along with financial planning advice to help manage your own finances properly.
         +btn("a","btn__main", "Read More")
     .pagination
-        a.pagination__link.pagination__first <<
-        a.pagination__link.pagination__prew <
+        a.pagination__link.pagination__first(href="#") <<
+        a.pagination__link.pagination__prew(href="#") <
         ul.pagination__list
             - for(var i=0; i<5; i++)
                 li.pagination__item
-                    a.pagination__link= (i+1)
-        a.pagination__link.pagination__next >
-        a.pagination__link.pagination__last >>
+                    a.pagination__link(href="#")= (i+1)
+        a.pagination__link.pagination__next(href="#") >
+        a.pagination__link.pagination__last(href="#") >>
